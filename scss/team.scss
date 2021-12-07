@@ -1,0 +1,33 @@
+@import "mixins";
+@import "variables";
+@import "fonts";
+
+* {
+    box-sizing: border-box;
+}
+
+.section-header {
+    font-family: 'TT Norms', sans-serif;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: bold;
+    color: $red-color;
+    background: linear-gradient(90deg, $red-color 0%, $red-light-color 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    @include fluid-type(32px, 42px);
+    @include fluid-line-height(38px, 50px);
+    margin: 197px 22% 80px;
+   
+    @media (max-width: 700px) {
+        margin: 125px 20px 20px;
+    }
+
+    @media (max-width: 280px) {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

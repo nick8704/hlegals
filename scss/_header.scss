@@ -12,6 +12,7 @@
             .nav-link {
                 color: white;
                 font-size: 18px;
+                text-align: end;
             }
         }
     }
@@ -109,6 +110,10 @@
     }
 
     @media (max-width: 992px) {
+        &-collapse {
+            margin-top: 0px;
+        }
+         
         &-container {
             padding-left: 20px;
             padding-right: 20px;
@@ -129,11 +134,23 @@
         &-language, &-phone {
             margin-bottom: 10px;
         }
+
+        &-phone {
+            color: $grey-color;
+        }
     }
 
     @media (max-width: 210px) {
         &-phone {
             display: none;
+        }
+
+        &-nav {
+            .nav-item {
+                .nav-link {
+                    text-align: start;
+                }
+            }
         }
     }
 }

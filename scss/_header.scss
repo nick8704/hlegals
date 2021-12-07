@@ -3,6 +3,10 @@
     width: 100%;
     margin: 50px 0;
 
+    @media (max-width: 992px) {
+        margin: 20px 0;
+    }
+
     &-nav {
         .nav-item {
             .nav-link {
@@ -10,6 +14,18 @@
                 font-size: 18px;
             }
         }
+    }
+
+    &-phone {
+        font-weight: bold;
+        margin: 0 10px 0 1px;
+    }
+
+    &-dot {
+       width: 6px;
+       height: 6px;
+       border-radius: 50%;
+       background-color: $white-color;
     }
 
     .navbar-toggler {
@@ -81,7 +97,11 @@
     &-address, &-phone {
         color: white;
         text-decoration: none;
-        margin: 0 10px;
+        margin: 0 10px 0 1px;
+    }
+
+    &-address {
+        margin: 0 10px 0 16px;
     }
 
     &-social {
@@ -89,7 +109,30 @@
     }
 
     @media (max-width: 992px) {
-        &-address, &-social {
+        &-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &-address, &-social, &-dot {
+            display: none;
+        }
+
+        &-logo {
+            max-width: 78px;
+        }
+
+        &-brand {
+            margin-top: 10px;
+        }
+
+        &-language, &-phone {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 210px) {
+        &-phone {
             display: none;
         }
     }

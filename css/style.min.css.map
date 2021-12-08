@@ -5,7 +5,7 @@
         "../scss/style.scss",
         "../scss/_variables.scss",
         "../scss/_header.scss",
-        "../scss/fonts.scss"
+        "../scss/_fonts.scss"
     ],
     "names": [],
     "file": "style.min.css"

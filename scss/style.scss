@@ -4,9 +4,50 @@
 
 body {
     font-family: 'TT Norms', sans-serif;
+    hyphens: auto;
 }
 
 .intro-sect {
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 180px 0;  
+}
+
+.carousel {
+    margin: 40px 0 80px;
+
+    &-indicators {
+        bottom: -60px;
+
+        [data-bs-target] {
+            background-color: $indicators-blue-color;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin: 0 7px;
+        }
+    }
+}
+
+.home-carousel {
+    .carousel-item {
+        background-color: $grey-btn-color;
+        border-radius: 12px;
+    }
+}
+
+.clients-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 1280px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

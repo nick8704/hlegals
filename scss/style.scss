@@ -1,10 +1,15 @@
 @import "variables";
+@import "mixins";
 @import "header";
 @import "fonts";
 
 body {
     font-family: 'TT Norms', sans-serif;
     hyphens: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .intro-sect {
@@ -32,6 +37,63 @@ body {
     .carousel-item {
         background-color: $grey-btn-color;
         border-radius: 12px;
+
+        &-photo {
+            padding-right: 40px;
+        }
+
+        .upper-text {
+            margin: 40px 0 3px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16.5px;
+            letter-spacing: 1px;
+            color: $indicators-blue-color;
+
+            &:after {
+                content: "";
+                background-image: url(../img/team-link.svg);
+                width: 5px;
+                height: 9px;
+                margin-left: 5px;
+                display: inline-block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        .section-heading {
+            font-size: 42px;
+            line-height: 50px;
+            font-weight: bold;
+            color: $red-color;
+            background-image: linear-gradient(90.13deg, $red-color 0.84%, $red-light-color 99.96%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            margin-bottom: 20px;
+            @include fluid-type(32px, 42px);
+            @include fluid-line-height(38px, 50px);
+        }
+
+        .carousel-info {
+            &-name {
+                color: $grey-color;
+                margin-bottom: 5px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            &-role {
+                color: $grey-color;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
     }
 }
 

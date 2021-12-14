@@ -167,10 +167,23 @@
         &-nav .nav-item .nav-link {
             color: $indicators-blue-color;
         }
+
+        &-nav .nav-item .nav-link-active {
+            color: $red-color;
+            border-bottom: 2px solid $red-color;
+            padding: 8px 0 0 0;
+            margin: 0 8px;
+
+            @media (max-width: 992px) {
+                margin-right: 0;
+                border-bottom: 0px;
+                text-decoration: underline;
+            }
+        }
     }
 
     .navbar-top {
-        width: 60%;
+        width: 50%;
 
         a, p {
             color: $grey-color;
@@ -220,6 +233,8 @@
 
         @media (max-width: 220px) { 
             display: block;
+            font-size: 16px; 
+            margin-top: 8px;
         }
     }
 }

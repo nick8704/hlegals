@@ -13,7 +13,7 @@
         font-size: 42px;
         line-height: 50px;
         font-weight: bold;
-        margin: 197px auto 40px;
+        margin: 30px auto 40px;
         max-width: 900px;
         color: $red-color;
         background-image: linear-gradient(90.13deg, $red-color 0.84%, $red-light-color 99.96%);
@@ -26,7 +26,7 @@
         @include fluid-line-height(38px, 50px);
        
         @media (max-width: 992px) {
-            margin: 125px 5px 0;
+            margin: 0 5px 0;
         }
     
         @media (max-width: 280px) {

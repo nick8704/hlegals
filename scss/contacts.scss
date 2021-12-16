@@ -1,0 +1,189 @@
+@import "variables";
+@import "fonts";
+
+* {
+    box-sizing: border-box;
+    hyphens: auto;
+    overflow-x: hidden;
+}
+
+.contacts-sect {
+    padding-top: 30px;
+    padding-bottom: 80px;
+
+    @media (max-width: 600px) {
+        padding-top: 0;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        &-separator {
+            border: 2px solid $white-color;
+
+            &-first {
+                margin: 20px 0 40px;
+            }
+
+            &-second {
+                margin: 40px 0 20px;
+            }
+        }
+    }
+
+    &-text {
+        width: 414px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &-address {
+            font-size: 21px;
+            line-height: 30px;
+            color: $main-regular-color;
+        }
+
+        &-phone {
+            font-size: 21px;
+            line-height: 30px;
+            color: $dark-regular-color;
+        }
+
+        &-email {
+            font-size: 21px;
+            line-height: 30px;
+            color: $indicators-blue-color;
+            display: block;
+            margin-top: 20px;
+        }
+
+        &-social-link {
+            display: flex;
+            margin-right: 10px;
+            align-items: center;
+
+            @media (max-width: 200px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            &-logo {
+                margin-right: 10px;
+            }
+        }
+
+        &-social-text {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: $indicators-blue-color;
+            text-transform: uppercase;
+
+            @media (max-width: 200px) {
+                margin-top: 10px;
+            } 
+        }
+    }
+
+    &-form {
+        background-color: $grey-btn-color;
+        border-radius: 12px;
+        padding: 20px;
+        flex-basis: 49%;
+        text-align: center;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 0;
+        }
+
+        &-header {
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: bold;
+            color: $red-color;
+            background-image: linear-gradient(90.13deg, $red-color 0.84%, $red-light-color 99.96%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            margin-bottom: 20px;
+            text-align: left;
+
+            @media (max-width: 600px) {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+
+        &-answer-title {
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: $grey-color;
+            text-transform: uppercase;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        &-message-input {
+            resize: none;
+        }
+
+        .form-input {
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 0 11px 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            outline: none;
+
+            &::placeholder {
+                font-size: 18px;
+                line-height: 26px;
+                color: $grey-color;
+            }
+        }
+
+        &-submit {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: bold;
+            color: white;
+            border-radius: 12px;
+            background-color: $indicators-blue-color;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border: none;
+            padding: 16px 70px 17px;
+
+            @media (max-width: 305px) {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}

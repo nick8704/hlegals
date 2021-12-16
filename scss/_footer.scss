@@ -25,9 +25,13 @@
     &-address {
         font-size: 16px;
         line-height: 19px;
-        color: $main-regular-color;
         font-weight: 500;
+        color: $main-regular-color;
         text-align: center;
+
+        &-city {
+            font-weight: bold;
+        }
 
         &-link {
             font-size: 12px;

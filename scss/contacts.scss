@@ -55,6 +55,12 @@
             font-size: 21px;
             line-height: 30px;
             color: $main-regular-color;
+
+            &-city {
+                @media (max-width: 600px) {
+                font-weight: 500;
+                }
+            }
         }
 
         &-phone {

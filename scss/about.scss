@@ -1,0 +1,117 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+* {
+    box-sizing: border-box;
+    hyphens: auto;
+    // overflow-x: hidden;
+}
+
+.achievement-sect {
+
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+    @media (max-width: 767px) {
+        padding: 0 20px 34px;
+    }
+
+    &-intro {
+
+        padding-right: 30px;
+
+        @media (max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-header {
+            font-size: 42px;
+            line-height: 50px;
+            font-weight: bold;
+            color: $red-color;
+            background-image: linear-gradient(90.13deg, $red-color 0.84%, $red-light-color 99.96%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            margin-bottom: 20px;
+            @include fluid-type(32px, 42px);
+            @include fluid-line-height(38px, 50px);
+        }
+
+        &-text {
+            font-size: 21px;
+            line-height: 30px;
+            color: black;
+            @include fluid-type(18px, 21px);
+            @include fluid-line-height(26px, 30px);
+        }
+    }
+
+    &-advantages {
+
+        border-left: 4px solid $white-color;
+        padding-left: 20px;
+        max-height: 288px;
+
+        @media (max-width: 992px) {
+            max-height: 350px;
+        }
+
+        @media (max-width: 767px) {
+            border-left: none;
+            border-top: 4px solid $white-color;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 4px;
+        }
+
+        &-item {
+
+            &-first {
+                @media (max-width: 767px) {
+                    padding-top: 15px;
+                } 
+            }
+
+            &-second {
+                margin-top: 40px;
+                margin-bottom: 40px;
+
+                @media (max-width: 767px) {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-heading {
+                display: flex;
+                align-items: center;
+
+                &-text {
+                    font-size: 36px;
+                    line-height: 42px;
+                    font-weight: bold;
+                    color: $red-color;
+                    background-image: linear-gradient(90.13deg, $red-color 0.84%, $red-light-color 99.96%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: transparent;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    margin-left: 6px;
+                }
+            }
+
+            &-text {
+                font-size: 18px;
+                line-height: 21px;
+                color: $main-regular-color;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

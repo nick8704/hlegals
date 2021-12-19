@@ -13,6 +13,10 @@
                 color: white;
                 font-size: 18px;
                 text-align: end;
+
+                &:hover {
+                    color: darken($color: white, $amount: 20%);
+                }
             }
         }
     }
@@ -21,6 +25,10 @@
         font-weight: bold;
         text-align: end;
         margin: 0 10px 0 1px;
+
+        &:hover {
+            color: darken($color: white, $amount: 20%);
+        }
     }
 
     &-dot {
@@ -60,6 +68,10 @@
 
             &.active {
                 background-color: $red-color;
+            }
+
+            &:hover {
+                color: darken($color: white, $amount: 20%);
             }
         }
     }
@@ -166,6 +178,10 @@
 
         &-nav .nav-item .nav-link {
             color: $indicators-blue-color;
+
+            &:hover {
+                color: darken($color: $indicators-blue-color, $amount: 20%);
+            }
         }
 
         &-nav .nav-item .nav-link-active {
@@ -173,6 +189,11 @@
             border-bottom: 2px solid $red-color;
             padding: 8px 0 0 0;
             margin: 0 8px;
+
+            &:hover {
+                color: darken($color: $red-color, $amount: 10%);
+                border-bottom: 2px solid $red-color-darken;
+            }
 
             @media (max-width: 992px) {
                 margin-right: 0;
@@ -190,9 +211,21 @@
         }
 
         .navbar-language {
+            &-item:hover {
+                color: darken($color: $grey-color, $amount: 10%);
+            }
+
             .active {
                 color: white;
+
+                &:hover {
+                    color: darken($color: white, $amount: 10%);
+                }
             }
+        }
+
+        .navbar-phone:hover {
+            color: darken($color: $grey-color, $amount: 10%);
         }
 
         @media (max-width: 992px) { 

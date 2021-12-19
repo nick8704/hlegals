@@ -36,7 +36,6 @@
     }
 
     &-member {
-
         &-item {
             margin-top: 40px;
             max-width: 413px;
@@ -88,6 +87,10 @@
             border-radius: 50%;
             background: url(../img/vector-icon.svg) center center/27% no-repeat;
             background-color: $grey-btn-color;
+
+            &:hover {
+                background-color: lighten($color: $grey-color, $amount: 1%);
+            }
         }
 
         &-link {

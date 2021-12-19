@@ -8,7 +8,6 @@
 }
 
 .achievement-sect {
-
     padding-top: 30px;
     padding-bottom: 84px;
     overflow-x: hidden;
@@ -20,7 +19,6 @@
     @media (max-width: 250px) {
        margin-bottom: 90px;
     }
-
 
     &-intro {
         padding-right: 30px;
@@ -83,7 +81,6 @@
         }
 
         &-item {
-
             &-first {
                 @media (max-width: 767px) {
                     padding-top: 15px;

@@ -102,6 +102,10 @@
             color: $indicators-blue-color;
             text-transform: uppercase;
 
+            &:hover {
+                color: darken($color: $indicators-blue-color, $amount: 10%);
+            }
+
             @media (max-width: 200px) {
                 margin-top: 10px;
             } 

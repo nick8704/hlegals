@@ -31,3 +31,21 @@
           )})
   );
 }
+
+
+@mixin fluid-letter-spacing(
+  $min-letter-spacing: 20px,
+  $max-letter-spacing: 63px,
+  $lower-range: 375px,
+  $upper-range: 1440px
+) {
+  letter-spacing: calc(
+    #{$min-letter-spacing} + #{(
+        ($max-letter-spacing / ($max-letter-spacing * 0 + 1)) -
+          ($min-letter-spacing / ($min-letter-spacing * 0 + 1))
+      )} * ((100vw - #{$lower-range}) / #{(
+            ($upper-range / ($upper-range * 0 + 1)) -
+              ($lower-range / ($lower-range * 0 + 1))
+          )})
+  );
+}

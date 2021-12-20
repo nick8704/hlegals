@@ -16,10 +16,6 @@
         padding: 0 20px 34px;
     }
 
-    @media (max-width: 250px) {
-       margin-bottom: 90px;
-    }
-
     &-intro {
         padding-right: 30px;
 
@@ -152,6 +148,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
     @media (max-width: 992px) {
         height: 290px;
@@ -178,6 +175,58 @@
         @media (max-width: 300px) {
             font-size: 18px;
             letter-spacing: 5px;
+        }
+    }
+}
+
+.swiper-container {
+    position: relative;
+
+    .logo-slider-pagination {
+        bottom: -50px;
+        
+        .swiper-pagination-bullet {
+            background-color: $indicators-blue-color;
+            width: 16px;
+            height: 16px;
+            margin: 0 7px;
+        }
+    }
+}
+
+.about-slider-sect {
+    background-color: $grey-btn-color;
+    padding: 0 0 75px;
+    border-radius: 12px 12px 0 0;
+
+    &-header {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $main-regular-color;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 28px;
+        padding-bottom: 22px;
+    }
+    
+    .swiper-slide {
+        background-color: white;
+        border-radius: 12px;
+        text-align: center;
+        padding: 25px;
+
+        img {
+            max-width: 100%;
+
+            @media (max-width: 1280px) {
+                max-height: 40px;
+            }
+
+            @media (max-width: 992px) {
+                max-height: 30px;
+            }
         }
     }
 }

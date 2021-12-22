@@ -19,7 +19,7 @@
     &-intro {
         padding-right: 30px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 575px) {
             padding-left: 0;
             padding-right: 0;
         }
@@ -52,7 +52,7 @@
     &-advantages {
         display: flex;
 
-        @media (max-width: 767px) {
+        @media (max-width: 575px) {
             padding-left: 0;
             padding-right: 0;
         }
